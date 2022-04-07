@@ -7,8 +7,7 @@ public class CheckoutSolution {
         if (str == null)
             return false;
         for(int i=0;i<str.length();i++){
-            if(str.charAt(i) != 'A' && str.charAt(i) != 'B' && str.charAt(i) != 'C' && str.charAt(i) != 'D'
-                    && str.charAt(i) != 'E' && str.charAt(i) != 'F')
+            if(str.charAt(i) < 'A' || str.charAt(i) > 'Z' )
                 return false;
         }
         return true;
@@ -34,6 +33,27 @@ public class CheckoutSolution {
         Integer totalD = totalchar(skus,'D');
         Integer totalE = totalchar(skus,'E');
         Integer totalF = totalchar(skus,'F');
+        Integer totalG = totalchar(skus,'G');
+        Integer totalH = totalchar(skus,'H');
+        Integer totalI = totalchar(skus,'I');
+        Integer totalJ = totalchar(skus,'J');
+        Integer totalK = totalchar(skus,'K');
+        Integer totalL = totalchar(skus,'L');
+        Integer totalM = totalchar(skus,'M');
+        Integer totalN = totalchar(skus,'N');
+        Integer totalO = totalchar(skus,'O');
+        Integer totalP = totalchar(skus,'P');
+        Integer totalQ = totalchar(skus,'Q');
+        Integer totalR = totalchar(skus,'R');
+        Integer totalS = totalchar(skus,'S');
+        Integer totalT = totalchar(skus,'T');
+        Integer totalU = totalchar(skus,'U');
+        Integer totalV = totalchar(skus,'V');
+        Integer totalW = totalchar(skus,'W');
+        Integer totalX = totalchar(skus,'X');
+        Integer totalY = totalchar(skus,'Y');
+        Integer totalZ = totalchar(skus,'Z');
+
 
 
         while(totalE >= 2){
@@ -72,6 +92,10 @@ public class CheckoutSolution {
 
         totalprice += totalD*15;
 
+        
+
+
         return totalprice;
     }
 }
+
