@@ -105,9 +105,35 @@ public class CheckoutSolution {
         }
         totalprice += totalH*10;
 
+        totalprice += totalI*35;
+
+        totalprice += totalJ*60;
+
+        while(totalK >= 2){
+            totalprice +=150;
+            totalK-=2;
+        }
+        totalprice += totalK*80;
+
+        totalprice += totalL*90;
+
+        while(totalN >= 3){
+            totalprice += 120;
+            if(totalM > 0)
+                totalM--;
+            totalN-=3;
+        }
+
+        totalprice += totalM*15;
+
+        
+
+
+
 
         return totalprice;
     }
 }
+
 
 
