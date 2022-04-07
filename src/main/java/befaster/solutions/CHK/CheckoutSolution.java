@@ -23,7 +23,7 @@ public class CheckoutSolution {
     public Integer checkout(String skus) {
         if (!isvalid(skus))
             return -1;
-        Integer totalprice = 0;
+        int totalprice = 0;
 
         Integer totalA = totalchar(skus, 'A');
         Integer totalB = totalchar(skus, 'B');
@@ -79,9 +79,11 @@ public class CheckoutSolution {
         }
         totalprice += totalB * 30;
 
-        while (totalF >= 3) {
+        while (totalF >= 2) {
             totalprice += 20;
-            totalF -= 3;
+            totalF -= 2;
+            if(totalF !=0 )
+                totalF --;
         }
         totalprice += totalF * 10;
 
@@ -107,7 +109,7 @@ public class CheckoutSolution {
         totalprice += totalJ * 60;
 
         while (totalK >= 2) {
-            totalprice += 150;
+            totalprice += 120;
             totalK -= 2;
         }
         totalprice += totalK * 80;
@@ -151,7 +153,7 @@ public class CheckoutSolution {
         while (totalU >= 3) {
             totalprice += 120;
             totalU -= 3;
-            if(totalU > 0 )
+            if (totalU > 0)
                 totalU--;
         }
         totalprice += totalU * 40;
@@ -170,37 +172,46 @@ public class CheckoutSolution {
 
         totalprice += totalW * 20;
 
-        Integer totalstxyz = totalZ+totalS+totalT+totalX+totalY;
-        while (totalstxyz >= 3){
-            totalprice+=45;
-            Integer counter = 3;
-            while (totalZ != 0 && counter != 0){
-                totalZ --;
+        int totalstxyz = totalZ + totalS + totalT + totalX + totalY;
+        while (totalstxyz >= 3) {
+            totalprice += 45;
+            int counter = 3;
+            while (totalZ != 0 && counter != 0) {
+                totalZ--;
                 counter--;
             }
-
+            while (totalS != 0 && counter != 0) {
+                totalS--;
+                counter--;
+            }
+            while (totalT != 0 && counter != 0) {
+                totalT--;
+                counter--;
+            }
+            while (totalY != 0 && counter != 0) {
+                totalY--;
+                counter--;
+            }
+            while (totalX != 0 && counter != 0) {
+                totalX--;
+                counter--;
+            }
+            totalstxyz -= 3;
         }
 
-        totalprice += totalS * 30;
+        totalprice += totalS * 20;
 
         totalprice += totalT * 20;
 
-        totalprice += totalX * 90;
+        totalprice += totalX * 17;
 
-        totalprice += totalY * 10;
+        totalprice += totalY * 20;
 
-        totalprice += totalZ * 50;
-
-
-
-
-
-
-
-
+        totalprice += totalZ * 21;
 
 
         return totalprice;
     }
 }
+
 
