@@ -191,9 +191,3 @@ public class CheckoutSolution {
         return totalprice;
     }
 }
-
-
-
-
-
-
