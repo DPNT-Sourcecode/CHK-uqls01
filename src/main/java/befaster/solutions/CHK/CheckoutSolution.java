@@ -147,9 +147,6 @@ public class CheckoutSolution {
         }
         totalprice += totalQ * 30;
 
-        totalprice += totalS * 30;
-
-        totalprice += totalT * 20;
 
         while (totalU >= 3) {
             totalprice += 120;
@@ -173,6 +170,21 @@ public class CheckoutSolution {
 
         totalprice += totalW * 20;
 
+        Integer totalstxyz = totalZ+totalS+totalT+totalX+totalY;
+        while (totalstxyz >= 3){
+            totalprice+=45;
+            Integer counter = 3;
+            while (totalZ != 0 && counter != 0){
+                totalZ --;
+                counter--;
+            }
+
+        }
+
+        totalprice += totalS * 30;
+
+        totalprice += totalT * 20;
+
         totalprice += totalX * 90;
 
         totalprice += totalY * 10;
@@ -191,3 +203,4 @@ public class CheckoutSolution {
         return totalprice;
     }
 }
+
