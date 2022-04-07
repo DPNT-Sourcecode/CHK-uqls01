@@ -29,7 +29,7 @@ public class CheckoutSolution {
 
         Integer totalA = totalchar(skus,'A');
 
-        while(totalA > 3){
+        while(totalA >= 3){
             totalprice +=130;
             totalA-=3;
         }
@@ -37,9 +37,9 @@ public class CheckoutSolution {
 
         Integer totalB = totalchar(skus,'B');
 
-        while(totalB > 3){
+        while(totalB >= 2){
             totalprice +=45;
-            totalB-=3;
+            totalB-=2;
         }
         totalprice +=  totalB*30;
 
@@ -52,6 +52,7 @@ public class CheckoutSolution {
         return totalprice;
     }
 }
+
 
 
 
