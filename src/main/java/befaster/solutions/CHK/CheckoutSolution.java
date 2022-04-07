@@ -120,6 +120,8 @@ public class CheckoutSolution {
                 totalM--;
             totalN -= 3;
         }
+        totalprice += totalN * 40;
+
 
         totalprice += totalM * 15;
 
@@ -131,17 +133,34 @@ public class CheckoutSolution {
         }
         totalprice += totalP * 50;
 
+        while (totalR >= 3) {
+            totalprice += 150;
+            if (totalQ > 0)
+                totalQ--;
+            totalR -= 3;
+        }
+        totalprice += totalR * 50;
+
         while (totalQ >= 3) {
             totalprice += 80;
             totalQ -= 3;
         }
         totalprice += totalQ * 30;
 
+        totalprice += totalS * 30;
+
+        totalprice += totalT * 20;
+
         
+
+
+
+
 
         return totalprice;
     }
 }
+
 
 
 
