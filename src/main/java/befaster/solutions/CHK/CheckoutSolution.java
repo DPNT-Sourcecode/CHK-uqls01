@@ -112,7 +112,7 @@ public class CheckoutSolution {
             totalprice += 120;
             totalK -= 2;
         }
-        totalprice += totalK * 80;
+        totalprice += totalK * 70;
 
         totalprice += totalL * 90;
 
@@ -213,5 +213,6 @@ public class CheckoutSolution {
         return totalprice;
     }
 }
+
 
 
