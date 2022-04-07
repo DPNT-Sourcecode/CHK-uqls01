@@ -26,13 +26,15 @@ public class MarketTest {
 
     @Test
     public void markettest() {
+        //task1
         assertThat(market.checkout("ABCD"), equalTo(115));
         assertThat(market.checkout("AAABCD"), equalTo(195));
         assertThat(market.checkout("AAABBCD"), equalTo(210));
         assertThat(market.checkout("AAABBCCDD"), equalTo(245));
-
+        //task2
 
     }
 }
+
 
 
