@@ -34,8 +34,13 @@ public class MarketTest {
         //task2
         assertThat(market.checkout("ABCDEE"), equalTo(165));
         assertThat(market.checkout("ABCDEEEE"), equalTo(245));
+        assertThat(market.checkout("ABBCDEEEE"), equalTo(245));
+        assertThat(market.checkout("ABBCDEEEEE"), equalTo(285));
+
+
 
     }
 }
+
 
 
