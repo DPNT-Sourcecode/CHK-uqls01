@@ -41,13 +41,15 @@ public class MarketTest {
         //assertThat(market.checkout("AAAAAAA"), equalTo(300));
         //assertThat(market.checkout("AAAAAAAA"), equalTo(330));
         //task3
-        assertThat(market.checkout("ABCDEEFF"), equalTo(185));
-        assertThat(market.checkout("ABCDEEFFF"), equalTo(185));
-        assertThat(market.checkout("ABCDEEFFFF"), equalTo(195));
-        assertThat(market.checkout("FF"), equalTo(20));
-        assertThat(market.checkout("FFF"), equalTo(20));
-        assertThat(market.checkout("FFFF"), equalTo(30));
-        assertThat(market.checkout("FFFFFF"), equalTo(40));
+       // assertThat(market.checkout("ABCDEEFF"), equalTo(185));
+        //assertThat(market.checkout("ABCDEEFFF"), equalTo(185));
+        //assertThat(market.checkout("ABCDEEFFFF"), equalTo(195));
+        //assertThat(market.checkout("FF"), equalTo(20));
+        //assertThat(market.checkout("FFF"), equalTo(20));
+        //assertThat(market.checkout("FFFF"), equalTo(30));
+        //assertThat(market.checkout("FFFFFF"), equalTo(40));
+        assertThat(market.checkout("ABCDEF"), equalTo(165));
+
 
 
 
@@ -62,9 +64,4 @@ public class MarketTest {
 
     }
 }
-
-
-
-
-
 

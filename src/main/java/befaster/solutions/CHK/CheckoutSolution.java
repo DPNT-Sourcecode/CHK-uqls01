@@ -68,8 +68,6 @@ public class CheckoutSolution {
         }
         totalprice+=totalF*10;
 
-        totalprice +=  totalB*30;
-
         totalprice += totalC*20;
 
         totalprice += totalD*15;
@@ -77,7 +75,3 @@ public class CheckoutSolution {
         return totalprice;
     }
 }
-
-
-
-
