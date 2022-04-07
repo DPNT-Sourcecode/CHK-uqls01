@@ -151,7 +151,38 @@ public class CheckoutSolution {
 
         totalprice += totalT * 20;
 
-        
+        while (totalU >= 3) {
+            totalprice += 120;
+            totalU -= 3;
+            if(totalU > 0 )
+                totalU--;
+        }
+        totalprice += totalU * 40;
+
+        while (totalV >= 3) {
+            totalprice += 130;
+            totalV -= 3;
+        }
+
+        while (totalV >= 2) {
+            totalprice += 90;
+            totalV -= 2;
+        }
+
+        totalprice += totalV * 50;
+
+        totalprice += totalW * 20;
+
+        totalprice += totalX * 90;
+
+        totalprice += totalY * 10;
+
+        totalprice += totalZ * 50;
+
+
+
+
+
 
 
 
@@ -160,6 +191,7 @@ public class CheckoutSolution {
         return totalprice;
     }
 }
+
 
 
 
