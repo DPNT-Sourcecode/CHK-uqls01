@@ -42,6 +42,11 @@ public class CheckoutSolution {
         }
         totalprice += totalE*40;
 
+        while(totalA >= 5){
+            totalprice +=200;
+            totalA-=5;
+        }
+
         while(totalA >= 3){
             totalprice +=130;
             totalA-=3;
@@ -63,5 +68,6 @@ public class CheckoutSolution {
         return totalprice;
     }
 }
+
 
 

@@ -36,11 +36,16 @@ public class MarketTest {
         assertThat(market.checkout("ABCDEEEE"), equalTo(245));
         assertThat(market.checkout("ABBCDEEEE"), equalTo(245));
         assertThat(market.checkout("ABBCDEEEEE"), equalTo(285));
+        assertThat(market.checkout("AAAAA"), equalTo(200));
+        assertThat(market.checkout("AAAAAA"), equalTo(250));
+        assertThat(market.checkout("AAAAAAA"), equalTo(330));
+
 
 
 
     }
 }
+
 
 
 
