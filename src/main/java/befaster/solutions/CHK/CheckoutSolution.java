@@ -8,7 +8,7 @@ public class CheckoutSolution {
             return false;
         for(int i=0;i<str.length();i++){
             if(str.charAt(i) != 'A' && str.charAt(i) != 'B' && str.charAt(i) != 'C' && str.charAt(i) != 'D'
-                    && str.charAt(i) != 'E')
+                    && str.charAt(i) != 'E' && str.charAt(i) != 'F')
                 return false;
         }
         return true;
@@ -33,6 +33,8 @@ public class CheckoutSolution {
         Integer totalC = totalchar(skus,'C');
         Integer totalD = totalchar(skus,'D');
         Integer totalE = totalchar(skus,'E');
+        Integer totalF = totalchar(skus,'F');
+
 
         while(totalE >= 2){
             totalprice += 2*40;
@@ -60,6 +62,13 @@ public class CheckoutSolution {
         }
         totalprice +=  totalB*30;
 
+        while(totalF >= 3){
+            totalprice +=20;
+            totalF-=3;
+        }
+        totalprice+=totalF*10;
+
+        totalprice +=  totalB*30;
 
         totalprice += totalC*20;
 
@@ -68,6 +77,7 @@ public class CheckoutSolution {
         return totalprice;
     }
 }
+
 
 
 
