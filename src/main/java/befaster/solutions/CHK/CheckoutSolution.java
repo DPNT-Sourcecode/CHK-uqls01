@@ -92,10 +92,22 @@ public class CheckoutSolution {
 
         totalprice += totalD*15;
 
-        
+        totalprice += totalG*20;
+
+        while(totalH >= 10){
+            totalprice += 80;
+            totalH-=10;
+        }
+
+        while(totalH >= 5){
+            totalprice +=45;
+            totalH-=5;
+        }
+        totalprice += totalH*10;
 
 
         return totalprice;
     }
 }
+
 
